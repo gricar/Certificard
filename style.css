@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap'); /*Importado do Google Fonts*/
+
+body {
+  background: linear-gradient(to left, rgba(204,255,204,0.8), rgba(0,255,188,1));
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*Para estilizar classes, é só chamar ponto. + nome da mesma*/
+.container {
+  background: #ECF4FF;
+  color: 1C1C1C;
+  margin: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0E1D2F;
+  padding: 25px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  border-radius: 300px;
+  max-height: 150px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.titulo {
+  margin-left: 15px;
+}
+
+/*Para estilizar a tag h1 da classe titulo; é uma outra maneira de estilizar ao inves de criar classes especificas*/
+.titulo h1{
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3{
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tema button {
+  font-family: 'Josefin Sans', sans-serif;
+  align-self: flex-end; /* Posiciona o buton na extremidade */
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px 16px; /* 8px - altera o espaço de bottom e top; 16px - extremidade laterais */
+  background: #ECF4FF;
+  border-radius: 100px;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(230deg, #87bdd8 20%, #80ced6 80%);
+  margin-top: 32px;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(16,16,16,0.42);
+}
+
+.projetos-titulos{
+  list-style: none; /* Remover as formatações padrões de lista */
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-item{
+  list-style-type: none; /* Remover os pontos de lista */
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.projetos-item a {       /* Editar as propridades da ancoragem - link */
+  color: #1C1C1C;
+  text-decoration: none; /* Não aparecer o sublinhado de link */
+}
+
+.dark {
+  background: linear-gradient(236deg, #375b86 27%, #6b87a9 96%);
+}
+
+.dark .container {
+  background: #333439;
+  color: #F6F6F6;
+}
+
+.dark .projetos {
+  color: #1c1c1c;
+}
+
+.dark .tema button{
+  background: #1c1c1c;
+  color: #FFFFFF;
+  border: 2px solid #F7F7F7;
+}
